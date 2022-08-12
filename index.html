@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <link rel="stylesheet" href="index.css">
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+  <style>
+    .attribution { font-size: 16px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>  
+  <header>
+    <div class="header-container">
+      <div class="bar">
+        <div class="logo">
+          <img src="images/logo.svg" alt="logo">
+        </div>
+        <div class="menu">
+          <div class="give"><img src="images/icon-menu.svg" alt="menu"></div>
+        </div>
+      </div>
+      
+      <nav class="navigation navigation_display">
+        <div class="nav1">
+          <ul class="list1">
+            <li class="drop1"><a class="dropdown" href="#">Features <span class="arrow"><img class="arrow_pic" src="images/icon-arrow-down.svg" alt="arrow-down"></span></a>
+              <div class="drop-1-a drop">
+                <ul>
+                  <li><span><img src="images/icon-todo.svg" alt="todo"></span><span><a href="#">To do list</a></span></li>
+                  <li><span><img src="images/icon-calendar.svg" alt="calendar"></span><span><a href="#">Calendar</a></span></li>
+                  <li><span><img src="images/icon-reminders.svg" alt="reminders"></span><span class="rem"><a href="#">Reminders</a></span></li>
+                  <li><span><img src="images/icon-planning.svg" alt="planning"></span><span><a href="#">Planning</a></span></li>
+                </ul>
+              </div>
+            </li>
+            <li class="drop2"><a class="dropdown" href="#">Company <span class="arrow"><img class="arrow_pic" src="images/icon-arrow-down.svg" alt="arrow-down"></span></a>
+             <div class="drop-2-a drop">
+                <ul>
+                  <li><a href="#">History</a></li>
+                  <li><a href="#">Our Team</a></li>
+                  <li><a href="#">Blog</a></li>
+                </ul> 
+             </div>
+            </li>
+            <li class="career"><a href="#">Careers</a></li>
+            <li class="about"><a href="#">About</a></li>
+          </ul>
+          <div class="close">
+            <img src="images/icon-close-menu.svg" alt="close">
+          </div>
+        </div>
+        <div class="nav2">
+          <ul class="list2">
+            <li><a href="#">Login</a></li>
+            <li><button type="button" class="btn">Register</button></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="box b1">
+        <div class="flex1">
+          <div>
+            <h1> Make remote work</h1>
+          </div>
+          <div>
+            <p>  Get your team in sync, no matter your location. Streamline processes, 
+            create team rituals, and watch productivity soar.</p>
+          </div>
+          <div class="flex1-a">
+            <button class="btn" type="button">
+            Learn More
+          </button>
+          </div>
+        </div>
+        <div class="flex2">
+          <span class="icon1"><img src="images/client-databiz.svg" alt="databiz"></span>
+          <span class="icon2"><img src="images/client-audiophile.svg" alt="audiophile"></span>
+          <span class="icon3"><img src="images/client-meet.svg" alt="meet"></span>
+          <span class="icon4"><img src="images/client-maker.svg" alt="maker"></span>
+        </div>
+      </div>
+      <div class="box b2">
+        <picture>
+          <source srcset="images/image-hero-mobile.jpg" media="(max-width: 600px)">
+          <img src="images/image-hero-desktop.jpg" alt="desktop-design">
+        </picture>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://www.frontendmentor.io/profile/Denzel-K" target="blank">Denzel Kariuki</a>.
+    </div>
+
+    <div class="experiment">
+      <img class="footer-icon" src="images/icon-arrow-down.svg" alt="">
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
