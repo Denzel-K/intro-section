@@ -6,7 +6,6 @@ const nav = document.querySelector('.navigation');
 const close = document.querySelector('.close');
 
 
-
 for(i=0; i<dropdowns.length; i++) {
     dropdowns[i].addEventListener('click', clicked);
     function clicked() {
