@@ -79,7 +79,7 @@ nav ul div {
 .drop-1-a ul li{
     display: flex;
     flex-wrap:nowrap;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: 8px 10px;
 }
 .drop-2-a {
@@ -129,25 +129,24 @@ a:active {
     padding: 20px 40px 40px 50px;
     height: 100%;
     width: auto;
-    align-items: flex-end;
+    align-items: center;
 }
 .box {
     width: 42%;
+    height: 700px;
 }
 .b1 {
     display: flex;
     flex-direction: column;
-    padding: 0 36px 10px 36px;
+    padding: 30px 36px 10px 36px;
 }
-.flex1 {
-    padding: 0;
-}
+
 .flex1 div {
     margin-bottom: 56px;
     margin-top: 0;
 }
 .btn {
-    padding: 12px 24px;
+    padding: 12px 30px;
     font-size: 1.2rem;
     border: none;
     color: white;
@@ -162,24 +161,29 @@ a:active {
     cursor: pointer;
     font-weight: 500;
     font-size: 1.2rem;
-    padding: 10px 20px;
+    padding: 10px 30px;
 }
 .b2 {
-    padding: 20px 50px;
+    padding: 30px 40px;
     display: flex;
     justify-content: center;
-    align-items: flex-end
+    align-items: center;
 }
 .b2 img{
-    width: 100%;
-    height: 90%;
+    width: 95%;
+    height: 100%;
     margin: auto;
 }
+.flex1 {
+    margin-top: 50px;
+    padding: 20px;
+}
 .flex2 {
-    margin-top: 80px;
+    margin-top: 20px;
+    padding: 30px 0;
 } 
 .icon2, .icon3, .iconn4 {
-    margin-left: 20px;
+    margin-left: 26px;
 }
 footer {
     padding: 60px 0 0 0;
@@ -191,6 +195,59 @@ footer {
 .close {
     display: none;
 }
+
+@media (max-width:1024px) {
+
+    h1 {
+        font-size: 4.1rem;
+        font-weight: 600;
+    }
+    p {
+        font-size: 1.2rem;
+        line-height: 1.6rem;
+        font-weight: 500;
+        color:hsl(0, 0%, 41%);
+    }
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 20px 40px 40px 40px;
+        height: 100%;
+        width: auto;
+        align-items: center;
+    }
+    .box {
+        width: 42%;
+        height: 600px;
+    }
+    .b1 {
+        display: flex;
+        flex-direction: column;
+        padding: 20px 26px 10px 26px;
+    }
+    .flex1 div {
+        margin-bottom: 0px;
+        margin-top: 0;
+    }
+    .flex1 {
+        margin-top: 55px;
+        padding: 20px;
+    }
+    .flex2 {
+        margin-top: 10px;
+        padding: 10px 0;
+    } 
+    .icon2, .icon3, .iconn4 {
+        margin-left: 5px;
+    }
+    .b2 img{
+        width: 100%;
+        height: 100%;
+        margin: auto;
+    }
+}
+
 
 @media (max-width: 600px) {
     body {
@@ -232,13 +289,15 @@ footer {
         align-items: flex-start;
     }
     .box {
-        width: 90%;
+        width: auto;
+        height: auto;
     }
     .b1 {
         display: flex;
         flex-direction: column;
         padding: 10px;
     }
+
     .flex1{
         display: flex;
         flex-direction: column;
@@ -246,9 +305,13 @@ footer {
         align-content: center;
         justify-content:center;
         text-align: center;
+        margin-top: 0;
     }
     .flex1 div {
-        margin-bottom: 20px;
+        margin-bottom: 0;
+    }
+    .btn1 {
+        margin-top: 20px;
     }
     .btn {
         padding: 12px 24px;
@@ -405,4 +468,16 @@ footer {
         cursor: pointer;
     }
     
+}
+
+@media (max-width: 430px) {
+    .bar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10px 0;
+    }
+    .menu {
+        margin-right: 0;
+    }
 }
